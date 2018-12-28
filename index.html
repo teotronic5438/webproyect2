@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TecnoShinta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link href="img/favico.png" rel="shortcut icon">    <!--Agrego link favico-->
+    <!--Agrego link para font awesome icon-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+<body>
+    <div class="contenedor">
+        <header class="cabecera">   <!--Apertura de cabecera-->
+            <img src="img/logo.png" alt="logo">
+            <h1>TecnoShinta</h1>
+        </header>   <!--Cierre de cabecera-->
+        <nav class="navegacion">    <!--Apertura de navegacion-->
+            <ul class="menu">
+                <li class="menu-item"><a href="#">Home</a></li>
+                <li class="menu-item"><a href="productos.html">Productos</a></li>
+                <li class="menu-item"><a href="promociones.html">Promociones</a></li>
+                <li class="menu-item"><a href="empresas.html">Empresas</a></li>
+                <li class="menu-item"><a href="accesorios.html">Accesorios</a></li>
+                <li class="menu-item"><a href="contacto.html">Contactenos</a></li>
+            </ul>
+        </nav>  <!--Cierre de navegacion-->
+        <main>
+                  <!-- Swiper -->
+            <div class="swiper-container">          <!--Apertura Slider-->
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/slider.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/slider.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/slider.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/slider.png" alt=""></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>                                  <!--Cierre Slider-->
+		
+		
+            <div class="pagos">  <!--Apertura medios de pagos-->
+                <div class="pagos-item">
+                    <div class="pagos-logo"><i class="fab fa-3x fa-cc-visa"></i></div>
+                    <div class="pagos-info">
+                        <h2>Debito y Credito</h2>
+                        <p><a href="">Ver promociones</a></p>
+                    </div>                    
+                </div>
+                <div class="pagos-item">
+                    <div><i class="fas fa-3x fa-money-check-alt"></i></div>
+                    <div class="pagos-info">
+                        <h2>Efectivo</h2>
+                        <p><a href="">Ver mas medios</a></p>
+                    </div>                    
+                </div>
+                <div class="pagos-item">
+                    <div><i class="fas fa-3x fa-map-marker-alt"></i></div>
+                    <div class="pagos-info">
+                        <h2>Sucursales</h2>
+                        <p><a href="">Ver sucursales</a></p>
+                    </div>                    
+                </div>
+                <div class="pagos-item">
+                    <div><i class="fas fa-3x fa-building"></i></div>
+                    <div class="pagos-info">
+                        <h2>Empresas</h2>
+                        <p><a href="">Ver servicioss</a></p>
+                    </div>                    
+                </div> 
+            </div>  <!--Cierre medios de pagos-->
+            <div class="destacados">  <!--Apertura productos destacados-->
+                <a href="#" class="destacados-item">
+                    <img src="img/productos/celular.jpg" alt="">
+                    <p>Samsung Galaxy J7 Prime</p>
+                    <p>$5.499,9</p>
+                    <p>6 cuotas sin interes</p>
+                </a>
+                <a href="#" class="destacados-item">
+                    <img src="img/productos/celular.jpg" alt="">
+                    <p>Samsung Galaxy J7 Prime</p>
+                    <p>$5.499,9</p>
+                    <p>6 cuotas sin interes</p>
+                </a>
+                <a href="#" class="destacados-item">
+                    <img src="img/productos/celular.jpg" alt="">
+                    <p>Samsung Galaxy J7 Prime</p>
+                    <p>$5.499,9</p>
+                    <p>6 cuotas sin interes</p>
+                </a>
+                <a href="#" class="destacados-item">
+                    <img src="img/productos/celular.jpg" alt="">
+                    <p>Samsung Galaxy J7 Prime</p>
+                    <p>$5.499,9</p>
+                    <p>6 cuotas sin interes</p>
+                </a>
+            </div>  <!--Cierre productos destacados-->
+        </main>
+        <footer class="pie">
+            <div class="pie-item">
+                <h3>Categorias</h3>
+                <p><a href="productos.html">Computadoras</a></p>
+                <p><a href="productos.html">Tablet</a></p>
+                <p><a href="productos.html">Impresoras</a></p>
+            </div>
+            <div class="pie-item">
+                <h3>Informacion</h3>
+                <p><a href="">Nuestras Sucursales</a></p>
+                <p><a href="">Envios a todo el Pais</a></p>
+                <p><a href="">Capacitaciones</a></p>
+            </div>
+            <div class="pie-item">
+                <h3>Recibi las ofertas por email</h3>
+                <p>Suscribete al newsletter</p>
+                <form>
+                    <input type="email" name="suscripcion" id="suscripcion" placeholder="Ingrese su correo">
+                    <input type="button" id="btnEnviar" value="Suscribirse"/>
+                </form>
+                <span id="resultado"></span>                    
+            </div>
+            <div class="pie-copy">
+                <p>&copy; Shinta Todos los derechos reservados</p>
+            </div>   
+        </footer>
+		<!-- Vinculo jquery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<script>
+		function realizaProceso(suscripcion){
+				var parametros = {
+						"suscripcion" : suscripcion
+				};
+				$.ajax({
+						data:  parametros, //datos que se envian a traves de ajax
+						url:   'newsletter.php', //archivo que recibe la peticion
+						type:  'post', //método de envio
+						beforeSend: function () {
+							$("#resultado").html("Enviando...");
+						},
+						success:  function (response) {
+							//una vez que el archivo recibe el request lo procesa y lo devuelve
+							$("#resultado").html(response);
+						}
+				});
+		}
+		
+		btnEnviar.addEventListener("click", () => {
+			realizaProceso(suscripcion.value);
+		})
+		
+		</script>
+		
+		 <!-- Swiper JS -->
+        <script src="js/swiper.min.js"></script>
+    
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            });
+        </script>
+    </div>
+</body>
+</html>

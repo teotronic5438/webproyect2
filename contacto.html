@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link href="img/favico.png" rel="shortcut icon">    <!--Agrego link favico-->
+    <!--Agrego link para font awesome icon-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+<body>
+    <div class="contenedor">
+        <header class="cabecera">   <!--Apertura de cabecera-->
+            <img src="img/logo.png" alt="logo">
+            <h1>TecnoShinta</h1>
+        </header>   <!--Cierre de cabecera-->
+        <nav class="navegacion">    <!--Apertura de navegacion-->
+            <ul class="menu">
+                <li class="menu-item"><a href="index.html">Home</a></li>
+                <li class="menu-item"><a href="productos.html">Productos</a></li>
+                <li class="menu-item"><a href="promociones.html">Promociones</a></li>
+                <li class="menu-item"><a href="empresas.html">Empresas</a></li>
+                <li class="menu-item"><a href="accesorios.html">Accesorios</a></li>
+                <li class="menu-item"><a href="#">Contactenos</a></li>
+            </ul>
+        </nav>  <!--Cierre de navegacion-->
+        <main>
+            <div class="contenido">
+                <div class="izq"> <!--Encapsulamos izquierda-->
+                    <h2 class="izq-titulo">Categorias</h2>
+                    <nav>
+                        <ul class="izq-lista">
+                                <li class="izq-lista_item"><a href="productos.html">Computadoras</a></li>
+                                <li class="izq-lista_item"><a href="productos.html">Tablet</a></li>
+                                <li class="izq-lista_item"><a href="productos.html">Impresoras</a></li>
+                                <li class="izq-lista_item"><a href="accesorios.html">Accesorios</a></li>
+                                <li class="izq-lista_item"><a href="empresas.html">Empresas</a></li>
+                        </ul>
+                    </nav>
+                </div> <!--Encapsulamos izquierda-->
+                <div class="der">
+                    <h2 class="titulo">Contactenos</h2>
+                    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+                    <br>
+                    <form action="insertarcon.php" method="POST">
+                        <table class="formcont">
+                            <tr>
+                                <td>Nombre:</td>
+                                <td><input type="text" placeholder="Ingrese su Nombre" name="nombre" required></td>
+                                <td>Apellido:</td>
+                                <td><input type="text" placeholder="Ingrese su apelido" name="apellido" required></td>
+
+                            </tr>
+                            <tr>
+                                <td>DNI:</td>
+                                <td><input type="number" placeholder="Ingrese su Documento" name="dni" required></td>
+                                <td>Sexo:</td>
+                                <td>
+                                    <label><input type="radio" name="sexo" value="Masculino" required>M</label>
+                                    <label><input type="radio" name="sexo" value="Femenino" required>F</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                                <td><input type="email" placeholder="Ingrese su email" name="email" required></td>
+                                <td>Telefono:</td>
+                                <td><input type="tel" placeholder="Ingrese su telefono" name="telefono" required></td>
+                            </tr>
+                            <tr>
+                                <td>Comentarios:</td>
+                                <td colspan="3"><textarea name="msj" cols="49" rows="6"></textarea><br></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <input type="submit" value="Enviar">
+                                    <input type="button">
+                                    <input type="reset" value="Limpiar">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="pie">
+            <div class="pie-item">
+                <h3>Categorias</h3>
+                <p><a href="">Computadoras</a></p>
+                <p><a href="">Tablet</a></p>
+                <p><a href="">Impresoras</a></p>
+            </div>
+            <div class="pie-item">
+                <h3>Informacion</h3>
+                <p><a href="">Nuestras Sucursales</a></p>
+                <p><a href="">Envios a todo el Pais</a></p>
+                <p><a href="">Capacitaciones</a></p>
+            </div>
+            <div class="pie-item">
+                <h3>Recibi las ofertas por email</h3>
+                <p>Suscribete al newsletter</p>
+                <form>
+                    <input type="email" name="suscripcion" id="suscripcion" placeholder="Ingrese su correo">
+                    <input type="button" id="btnEnviar" value="Suscribirse"/>
+                </form>
+                <span id="resultado"></span>                    
+            </div>
+            <div class="pie-copy">
+                <p>&copy; Shinta Todos los derechos reservados</p>
+            </div>   
+        </footer>
+		<!-- Vinculo jquery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<script>
+		function realizaProceso(suscripcion){
+				var parametros = {
+						"suscripcion" : suscripcion
+				};
+				$.ajax({
+						data:  parametros, //datos que se envian a traves de ajax
+						url:   'newsletter.php', //archivo que recibe la peticion
+						type:  'post', //método de envio
+						beforeSend: function () {
+							$("#resultado").html("Enviando...");
+						},
+						success:  function (response) {
+							//una vez que el archivo recibe el request lo procesa y lo devuelve
+							$("#resultado").html(response);
+						}
+				});
+		}
+		
+		btnEnviar.addEventListener("click", () => {
+			realizaProceso(suscripcion.value);
+		})
+		
+		</script>
+
+    </div>
+</body>
+</html>

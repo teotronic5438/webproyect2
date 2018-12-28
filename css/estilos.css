@@ -1,0 +1,251 @@
+/*estilos.css*/
+:root {
+    /*Declaracion de variables de color*/
+    --blanco:#FFF;
+    --negro:#000;
+    --naranja:#F90;
+    --gris:#B09FCC;
+    --amarillo:#F6F328;
+    --lila:#F48DDF;
+    --rojo: #FC0F0F;
+    --azul:#2D37ED;
+    --celeste: #4a5ef2;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+body {
+    background-image: url(../img/fondo.jpg);
+}
+.contenedor {
+    max-width: 1000px;
+    margin: auto;
+}
+/*----------------------
+       CABECERA
+----------------------*/
+.cabecera {
+    background-color: var(--blanco);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    text-shadow: var(--gris) 2px 2px 3px;
+}
+.titulo {
+    text-align: center;
+    color: var(--celeste);
+}
+/*----------------------
+       NAVEGACION
+----------------------*/
+.menu {
+    width: 100%;
+    height: 7vh;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--rojo);
+}
+.menu-item {
+    border-left: 1px solid var(--blanco);
+}
+.menu-item:first-child {
+    border: none;
+}
+.menu-item a {
+    text-decoration: none;
+    display: block;
+    color: var(--blanco);
+    font-weight: bold;
+    padding: 10px 10px;
+}
+.menu-item:hover {
+    text-decoration: underline;
+    color: var(--blanco);
+}
+/*----------------------
+       SLIDER
+----------------------*/
+.slider {
+    width: 100%;
+    height: 45vh;
+    border-radius: 10px;
+}
+.slider img {
+    width: 100%;
+    height: 100%;
+}
+/*----------------------
+       PAGOS
+----------------------*/
+.pagos {
+    width: 100%;
+    height: 10vh;
+    font-size: 0.7em;
+    display: flex;
+    background-color: var(--gris);
+}
+.pagos-item {
+    width: 25%;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--blanco);
+    color: var(--celeste);
+}
+h2 {
+    color: var(--negro);
+}
+.pagos-info a {
+    text-decoration: none;
+    color: var(--celeste);
+}
+.pagos-info a:hover {
+    text-decoration: underline;
+    color: var(--celeste);
+}
+/*----------------------
+       PRODUCTOS
+----------------------*/
+.destacados {
+    width: 100%;
+    height: 25vh;
+    font-size: 0.8em;
+    display: flex;
+    background-color: var(--gris);
+    justify-content: space-between;
+}
+.destacados-item {
+    width: 25%;
+    background-color: var(--blanco);
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.destacados-item a {
+    text-decoration: none;
+    color: var(--azul);
+}
+.destacados-item a:hover {
+    text-decoration: underline;
+    color: var(--azul);
+}
+
+/*----------------------
+       FOOTER
+----------------------*/
+.pie {
+    font-size: 0.8em;
+    background-color: var(--blanco);
+    color: var(--celeste);
+}
+.pie-item {
+    float: left;
+    width: 33%;
+    text-align: center;
+    padding: 10px;
+
+}
+.pie-item a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--celeste);
+}
+.pie-item a:hover {
+    text-decoration: underline;
+    color: var(--celeste);
+}
+.pie-copy {
+    clear: both;
+    text-align: center;
+    padding: 10px;
+    color: var(--negro);
+}
+/* --------------------
+    Navegacion Izquierda  BEM / CSSOM 
+   --------------------  
+*/
+/*Contenido: Encapsula Submenu y Pagina*/
+.contenido {
+    background-color: var(--blanco);
+    display: flex;
+}
+.izq {
+    flex-grow: 1;  /*Propiedad para que abarque todo el ancho del contenido*/
+    margin-right: 32px;
+    margin-top: 15px;
+}
+.der {
+    margin-top: 15px;
+    flex-grow: 1;
+    width: 70%;
+}
+
+.izq-lista {
+    list-style: none;
+    margin-left: 33px;
+}
+.izq-lista_item a {
+    display: block;
+    color: var(--negro);
+    text-decoration: none;
+    padding: 4px 0;
+    border-bottom: 1px dashed var(--gris);
+    transition: all 0.5s;
+}
+.izq-lista_item a:hover {
+    text-decoration: underline;
+    padding-left: 10px;
+}
+.izq-titulo {
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+/*------------------------
+Formulario Contacto
+-----------------------*/
+.formcont {
+    background-color: papayawhip;
+    width: 80%;
+    margin: auto;
+    border: 2px solid orange;
+}
+td {
+    padding: 10px;
+    margin: auto;
+}
+
+.der article{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.der article img{
+    width: 40vw;
+    height: 100%;
+    margin: 4vh;
+    shape-outside: circle();
+}
+.der article div{
+    width: 40vw;
+}
+.der article:nth-child(2){
+    flex-direction: row-reverse;
+}
+/**********************
+    NEWSLETTER
+**********************/
